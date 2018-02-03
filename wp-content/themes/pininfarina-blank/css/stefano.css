@@ -1,0 +1,234 @@
+/*
+@Filename: stefano.css
+@Author: Stefano P.
+@Company: ITS Piemonte Torino
+@Curse: Web e Mobile App Developement
+@Progect: Pininfarina Laboratory
+@Commission: Pininfarina
+@Copyright: Pininfarina
+@Date: 01/2018
+
+@ClassSuffix: "s_"
+*/
+/*****************************************
+************** STEFANO CSS ***************
+*****************************************/
+
+.s_simpleImg {
+    width: 100%;
+}
+
+.s_indicator-menu {
+    width: 100px;
+    height: 4px;
+    /*margin-left: 315px;*/
+    background-color: black;
+    margin-top: 7%;
+}
+
+#numPagina {
+    visibility: hidden;
+    /* z-index: 1; */
+    position: absolute;
+    left: -500px;
+}
+
+.numPagina {
+    visibility: hidden;
+    /* z-index: 1; */
+    position: absolute;
+    left: -500px;
+}
+
+/***********************
+****** ABOUT US ********
+***********************/
+
+.s_aboutUs_aboutUsDiv {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    /*padding: 1px;*/
+    /* margin-top: 30px; */
+    /*margin-top: 50px;*/
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.s_aboutUs_titleAndText{ 
+    width: 50%;
+}
+
+.s_aboutUs_image {
+    width: 48%;
+}
+
+.s_aboutUs_mainTitle {
+    /* background-color: #ff4f41; */
+    padding: 2%;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 50px; */
+    color: #ff4f41;
+    border-bottom: 4px solid #ff4f41;
+    margin-top: 5%;
+}
+
+.s_aboutUs_contentText {
+    margin-top: 4%;
+    font-family: "Roboto";
+    margin-bottom: 1%;
+}
+
+.s_aboutUs_h1Style {
+    font-size: 2.5em;
+}
+
+.s_aboutUs_governanceTitle {
+    margin-top: 4%;
+}
+
+.s_aboutUs_contactsTitle {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.s_aboutUs_singleContact {
+    padding: 1% 0;
+}
+
+.s_aboutUs_contactsColor {
+    color: #ff4f41;
+}
+
+@media only screen and (max-width: 500px) {
+    .s_aboutUs_aboutUsDiv {
+        display: block;
+        /*padding: 1px;*/
+        /* margin-top: 30px; */
+        /*margin-top: 50px;*/
+        justify-content: space-between;
+        margin-top: 4%;
+    }
+    .s_aboutUs_titleAndText{ 
+        width: 100%;
+    }
+    
+    .s_aboutUs_image {
+        width: 100%;
+    }
+}
+
+/* CAROUSEL */
+
+.carousel-wrap {
+    margin: 0 auto;
+    padding: 3% 8%;
+    width: 100%;
+    position: relative;
+    background-color: #ff4f41;
+  }
+  
+  /* fix blank or flashing items on carousel */
+  .owl-carousel .item {
+    position: relative;
+    z-index: 100; 
+    -webkit-backface-visibility: hidden; 
+  }
+  
+  /* end fix */
+  .owl-nav > div {
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+  }
+  
+  .owl-nav i {
+    font-size: 30px;
+  }
+  
+  .owl-nav .owl-prev {
+    left: -30px;
+  }
+  
+  .owl-nav .owl-next {
+    right: -30px;
+  }
+
+.owl-prev {
+    /*left: -5% !important;*/
+}
+
+.owl-next {
+    left: 101%;
+}
+
+/***********************
+********* NEWS *********
+***********************/
+
+.s_news_mainTitle {
+    /* background-color: #ff4f41; */
+    padding: 2%;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 50px; */
+    color: rgb(155, 0, 105);
+    border-bottom: 4px solid rgb(155, 0, 105);
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.s_news_containerNews {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.s_news_containerNews > div {
+    background-color: #f7f7f7;
+    width: 31%;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 33px; */
+    font-size: 30px;
+    border: 2px solid #f5f5f5;
+    box-shadow: 5px 5px 20px #cacaca;
+}
+
+@media only screen and (max-width: 500px) {
+    .s_news_containerNews > div {
+        width: 100%;
+    }
+}
+
+.s_news_titleArticle {
+    padding: 5%;
+}
+
+.s_news_subtitleArticle {
+    font-size: 0.4em;
+    padding: 0% 2% 3% 0%;
+}
+
+.s_news_articleIntroduction {
+    font-size: 0.5em;
+    padding: 5%;
+    text-align: initial;
+}
+
+.s_news_h1Style {
+    font-size: 2.5em;
+    font-weight: bold; 
+}
+
+.s_news_singlePressReview { border-top: 1px solid; padding: 2%; }
+.s_news_datePressReview { font-size: 0.7em; }
+.s_news_pressReview { margin-top: 4%; margin-bottom: 5%; }
+.s_news_contentPressReviwe { display: flex; }
+.s_news_imagePressReviwe { width: 15%; }
+.s_pressReviewImg { width: 100%; }
+.s_news_titlePressReview { font-size: 1.5em; font-weight: bold; }
+.s_news_titleAndBodyPressReview { padding: 2% 0% 2% 2%; } 
+.s_news_sourcePressReview { font-size: 0.8em; }
